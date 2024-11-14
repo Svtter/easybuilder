@@ -1,4 +1,4 @@
-from scripts.check import check_clean
+from .checker import check_clean
 
 
 class Worker(object):
