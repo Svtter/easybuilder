@@ -1,5 +1,5 @@
 [project]
-name = "docker_builder"
+name = "easybuilder"
 version = "0.1.0"
 description = "Default template for PDM package"
 authors = [

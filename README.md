@@ -1,3 +1,7 @@
-# docker_builder
+# EasyBuilder
 
-Quick build tools with python.
+A quick docker image build tool with python.
+
+## install
+
+`pip install easybuilder`
