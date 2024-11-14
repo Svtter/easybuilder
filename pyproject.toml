@@ -1,6 +1,6 @@
 [project]
 name = "easybuilder"
-version = "0.1.0"
+version = "0.1.2"
 description = "Default template for PDM package"
 authors = [
     {name = "svtter", email = "svtter@qq.com"},
@@ -12,4 +12,9 @@ license = {text = "MIT"}
 
 
 [tool.pdm]
-distribution = false
+distribution = true
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
