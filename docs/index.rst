@@ -11,7 +11,16 @@ Add your content using ``reStructuredText`` syntax. See the
 documentation for details.
 
 
+Install easybuilder
+--------------------
+
+.. code-block:: bash
+
+    pip install easybuilder
+
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
+
+   usage
 
