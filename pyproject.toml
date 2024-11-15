@@ -13,6 +13,7 @@ license = {text = "MIT"}
 
 [tool.pdm]
 distribution = true
+version = { source = "file", path = "src/easybuilder/__init__.py" }
 
 [build-system]
 requires = ["pdm-backend"]
