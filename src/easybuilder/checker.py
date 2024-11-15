@@ -1,8 +1,9 @@
 import os
 
 
-def check_clean():
+def check_clean(folder: str = "."):
     # 检查git仓库是否有未提交的更改
+    os.chdir(folder)
     result = os.popen("git status --porcelain").read()
     if not os.path.exists(".git"):
         print("错误: 当前目录不是git仓库")
