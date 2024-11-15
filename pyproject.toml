@@ -1,6 +1,6 @@
 [project]
 name = "easybuilder"
-version = "0.1.4"
+dynamic = ["version"]
 description = "Default template for PDM package"
 authors = [
     {name = "svtter", email = "svtter@qq.com"},
