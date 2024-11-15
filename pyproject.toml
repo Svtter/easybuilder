@@ -18,3 +18,7 @@ distribution = true
 requires = ["pdm-backend"]
 build-backend = "pdm.backend"
 
+[dependency-groups]
+dev = [
+    "pytest>=8.3.3",
+]
