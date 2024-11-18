@@ -23,4 +23,5 @@ Install easybuilder
    :caption: Contents:
 
    usage
+   api/index
 

@@ -1,12 +1,19 @@
-from .checker import check_clean
+from . import task
 
 
 class Worker(object):
+    default_tasks: list[type[task.Task]] = [task.CheckCleanTask]
+    prev_tasks: list[type[task.Task]] = []
+    next_tasks: list[type[task.Task]] = []
+
     def __init__(self):
         pass
 
     def before_run(self):
-        check_clean()
+        for t in self.default_tasks:
+            t().action()
+        for t in self.prev_tasks:
+            t().action()
 
     def after_run(self):
         pass

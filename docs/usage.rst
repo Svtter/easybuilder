@@ -37,10 +37,3 @@ easybuilder 是一个简单的构建工具，主要包含以下几个组件：
        # 在临时文件夹中进行操作
        pass
 
-**checker**: 检查工具
------------------------------------
-.. code-block:: python
-
-   from easybuilder.checker import check_clean
-
-   check_clean()  # 检查 git 仓库是否干净
