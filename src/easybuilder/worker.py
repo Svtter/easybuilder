@@ -1,3 +1,5 @@
+import loguru
+
 from . import task
 
 
@@ -8,6 +10,10 @@ class Worker(object):
 
     def __init__(self):
         pass
+
+    def get_logger(self):
+        """using loguru for logger"""
+        return loguru.logger
 
     def before_run(self):
         for t in self.default_tasks:
